@@ -17,7 +17,7 @@ namespace test.models
     }
     class Person
     {
-        string email { get; set; }
+        string Email { get; set; }
         int ID { get; set; }
         string Firstname { get; set; }
         string Lastname { get; set; }
