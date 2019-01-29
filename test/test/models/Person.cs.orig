@@ -22,24 +22,37 @@ namespace test.models
         string Lastname { get; set; }
         int Age { get; set; }
         string Department { get; set; }
-        string Address { get; set; }
+<<<<<<< HEAD
         Gender Gender { get; set; }
         Birthmonth Month { get; set; }
 
-        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "") { }
-       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department)
+        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march) { }
+       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth)
+=======
+        string Address { get; set; }
+
+       public Person() : this("", "", 0, "") { }
+       public Person(string firstname, string lastname, int age, string department)
+>>>>>>> f5288186a287a8f4f838ab4b5ba58821722d686f
         {
             this.Firstname = firstname;
             this.Lastname = lastname;
             this.Age = age;
+<<<<<<< HEAD
             this.Gender = gender;
             this.Month = birth;
+=======
             this.Department = department;
+>>>>>>> f5288186a287a8f4f838ab4b5ba58821722d686f
         }
 
         public override string ToString()
         {
-            return this.ID + " " + this.Firstname + " " + this.Lastname + " " + this.Age + " " + this.Gender + " " + this.Month + " " + this.Department;
+<<<<<<< HEAD
+            return this.Firstname + "" + this.Lastname + "" + this.Age + "" + this.Gender + "" + this.Month;
+=======
+            return this.Firstname + "" + this.Lastname + "" + this.Age + "" + this.Department + "";
+>>>>>>> f5288186a287a8f4f838ab4b5ba58821722d686f
         }
     }
 }
