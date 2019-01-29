@@ -17,7 +17,7 @@ namespace test.models
     }
     class Person
     {
-        string email { get; set; }
+        string Email { get; set; }
         int ID { get; set; }
         string Firstname { get; set; }
         string Lastname { get; set; }
@@ -28,14 +28,14 @@ namespace test.models
         Birthmonth Month { get; set; }
         int Telnumber { get; set; }
 
-       public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
-       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department, int telnumber)
+       public Person() : this("", "", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
+       public Person(string firstname, string lastname, string email, int age, Gender gender, Birthmonth birth, string department, int telnumber)
         {
             this.Firstname = firstname;
             this.Lastname = lastname;
             this.Age = age;
             this.Gender = gender;
-          
+            this.Email = email;
             this.Department = department;
             this.Telnumber = telnumber;
         }
@@ -43,7 +43,7 @@ namespace test.models
 
         public override string ToString()
         {
-            return this.ID + " " + this.Firstname + " " + this.Lastname + " " + this.Age + " " + this.Gender + " " + this.Month + " " + this.Department;
+            return this.ID + " " + this.Firstname + " " + this.Lastname + " " + this.Age + " " + this.Gender + " " + this.Month + " " + this.Department + " " + this.Email;
         }
     }
 }
