@@ -28,7 +28,7 @@ namespace test.models
         Birthmonth Month { get; set; }
         int Telnumber { get; set; }
 
-        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
+       public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
        public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department, int telnumber)
         {
             this.Firstname = firstname;
