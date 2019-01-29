@@ -26,6 +26,11 @@ namespace test.models
             this.Department = department;
         }
 
+        public override string ToString()
+        {
+            return this.Email + " " + this.Firstname + " " + this.Lastname + " ";
+        }
+
 
     }
 }
