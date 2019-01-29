@@ -8,12 +8,23 @@ namespace test.models
 {
     class htl
     {
-        string email { get; set; }
+        string Email { get; set; }
         int ID { get; set; }
         string Firstname { get; set; }
         string Lastname { get; set; }
         int Age { get; set; }
         string Department { get; set; }
+
+        public htl() : this("", 0, "", "", 0, "") { }
+        public htl(string email, int id, string firstname, string lastname, int age, string department)
+        {
+            this.Email = email;
+            this.ID = id;
+            this.Firstname = firstname;
+            this.Lastname = lastname;
+            this.Age = age;
+            this.Department = department;
+        }
 
 
     }
