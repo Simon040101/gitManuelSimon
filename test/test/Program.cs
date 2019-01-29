@@ -13,6 +13,7 @@ namespace test
             Console.WriteLine("Hello World :)");
             Console.WriteLine("You have been hacked!");
             Console.WriteLine("LOL XD ");
+            Console.WriteLine("Neue Zeile :)");
             Console.WriteLine("No! You have been hacked.");
         }
     }
