@@ -11,7 +11,10 @@ namespace test.models
         male, female, notSpecified
     }
 
-    
+    enum Birthmonth
+    {
+        january, february, march, april
+    }
     class Person
     {
         string email { get; set; }
@@ -22,10 +25,11 @@ namespace test.models
         string Department { get; set; }
         string Address { get; set; }
         Gender Gender { get; set; }
-       
+        Birthmonth Month { get; set; }
+        int Telnumber { get; set; }
 
-        public Person() : this("", "", 0, Gender.notSpecified, "") { }
-       public Person(string firstname, string lastname, int age, Gender gender, string department)
+        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
+       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department, int telnumber)
         {
             this.Firstname = firstname;
             this.Lastname = lastname;
@@ -33,6 +37,7 @@ namespace test.models
             this.Gender = gender;
           
             this.Department = department;
+            this.Telnumber = telnumber;
         }
 
 

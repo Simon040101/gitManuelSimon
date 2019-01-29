@@ -12,8 +12,11 @@ namespace test
         {
             Console.WriteLine("Hello World :)");
             Console.WriteLine("You have been hacked!");
-            Console.WriteLine("LOL XD ");
+<<<<<<< HEAD
             Console.WriteLine("No! You have been hacked.");
+=======
+            Console.WriteLine("LOL XD ");
+>>>>>>> 4a3e1d07275697e14833a5f3f83f305e21bad8a6
         }
     }
 }
