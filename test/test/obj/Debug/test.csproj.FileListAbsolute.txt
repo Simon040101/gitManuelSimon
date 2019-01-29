@@ -1,3 +1,0 @@
-C:\Users\Simon\Desktop\repositories\gitManuelSimon\test\test\bin\Debug\test.exe.config
-C:\Users\Simon\Desktop\repositories\gitManuelSimon\gitManuelSimon\test\test\bin\Debug\test.exe.config
-C:\Users\Besitzer\Desktop\Repository\gitManuelSimon\test\test\bin\Debug\test.exe.config
