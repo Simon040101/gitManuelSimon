@@ -11,6 +11,7 @@ namespace test.models
         string Firstname { get; set; }
         string Lastname { get; set; }
         int Age { get; set; }
+        string Department { get; set; }
 
        public Person() : this("", "", 0) { }
        public Person(string firstname, string lastname, int age)
