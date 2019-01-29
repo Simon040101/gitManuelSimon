@@ -26,9 +26,10 @@ namespace test.models
         string Address { get; set; }
         Gender Gender { get; set; }
         Birthmonth Month { get; set; }
+        int Telnumber { get; set; }
 
-        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "") { }
-       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department)
+        public Person() : this("", "", 0, Gender.notSpecified, Birthmonth.march, "", 0) { }
+       public Person(string firstname, string lastname, int age, Gender gender, Birthmonth birth, string department, int telnumber)
         {
             this.Firstname = firstname;
             this.Lastname = lastname;
@@ -36,6 +37,7 @@ namespace test.models
             this.Gender = gender;
             this.Month = birth;
             this.Department = department;
+            this.Telnumber = telnumber;
         }
 
         public override string ToString()
